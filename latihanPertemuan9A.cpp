@@ -193,4 +193,7 @@ int main()
     ubahPangkatDosen(dosen1, "Lektor Kepala", *univ1);
     dosen1->tampilkanInfoDosen();
 
+    // Staff melihat gaji dosen melalui friend function
+    lihatGajiDosen(*dosen1);
+
 }
