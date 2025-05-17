@@ -181,4 +181,7 @@ int main()
     mhs1->tampilkanInfoMahasiswa();
     staff1->tampilkanInfoStaff();
 
+    // Mahasiswa mengakses informasi dosen melalui friend class
+    mhs1->lihatInfoDosen(*dosen1);
+
 }
