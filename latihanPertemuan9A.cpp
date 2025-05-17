@@ -199,4 +199,15 @@ int main()
     // Universitas melihat gaji staff melalui friend function (yang diimplementasikan sebagai method Universitas)
     univ1->lihatGajiStaff(*staff1);
 
+    // Membersihkan memori yang dialokasikan dengan new
+    delete dosen1;
+    delete mhs1;
+    delete staff1;
+    delete univ1;
+    dosen1 = nullptr;
+    mhs1 = nullptr;
+    staff1 = nullptr;
+    univ1 = nullptr;
+
+    return 0;
 }
