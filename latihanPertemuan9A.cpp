@@ -50,3 +50,39 @@ public:
     }
 
 };
+
+class Dosen 
+{
+private:
+    std::string NIDN;
+    std::string nama;
+    std::string pangkat;
+    double gaji;
+    friend class Mahasiswa; // Mahasiswa bisa melihat info dosen
+    friend class Universitas; // Universitas bisa mengakses gaji untuk keperluan administrasi (misalnya)
+    friend void lihatGajiDosen(const Dosen& dosen);
+    friend void beriNilai(Mahasiswa& m, double nilai, const Dosen& pengajar);
+    friend void ubahPangkatDosen(Dosen* dosen, std::string pangkatBaru, const Universitas& universitas);
+
+public:
+    Dosen(std::string nidn, std::string nm, std::string pkt, double gj) : NIDN(nidn), nama(nm), pangkat(pkt), gaji(gj) {}
+
+    double getGaji() const 
+    {
+        return gaji;
+    }
+
+    std::string getNama() const 
+    {
+        return nama;
+    }
+
+    void tampilkanInfoDosen() const 
+    {
+        std::cout << "NIDN: " << NIDN << std::endl;
+        std::cout << "Nama Dosen: " << nama << std::endl;
+        std::cout << "Pangkat: " << pangkat << std::endl;
+        std::cout << "Gaji: Rp " << gaji << std::endl;
+    }
+};
+
