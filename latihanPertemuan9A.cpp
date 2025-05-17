@@ -145,3 +145,24 @@ public:
         std::cout << "\nUniversitas: Gaji Staff " << staff.getNama() << " adalah: Rp " << staff.getGaji() << std::endl;
     }
 };
+
+void beriNilai(Mahasiswa& m, double nilai, const Dosen& pengajar) 
+{
+    std::cout << "\nDosen " << pengajar.getNama() << " memberikan nilai " << nilai << " kepada mahasiswa " << m.nama << std::endl;
+    m.nilai = nilai;
+}
+
+void ubahPangkatDosen(Dosen* dosen, std::string pangkatBaru, const Universitas& universitas) 
+{
+    universitas.ubahPangkatDosen(dosen, pangkatBaru);
+}
+
+void lihatGajiDosen(const Dosen& dosen) 
+{
+    std::cout << "\nGaji Dosen (diakses melalui getter): Rp " << dosen.getGaji() << std::endl;
+}
+
+void lihatGajiStaff(const Staff& staff) 
+{
+    std::cout << "\nGaji Staff (diakses melalui getter): Rp " << staff.getGaji() << std::endl;
+}
