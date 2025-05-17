@@ -184,4 +184,8 @@ int main()
     // Mahasiswa mengakses informasi dosen melalui friend class
     mhs1->lihatInfoDosen(*dosen1);
 
+    // Dosen memberikan nilai kepada mahasiswa (menggunakan friend function)
+    beriNilai(*mhs1, 90.0, *dosen1);
+    mhs1->tampilkanInfoMahasiswa();
+
 }
