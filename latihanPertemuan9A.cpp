@@ -166,3 +166,13 @@ void lihatGajiStaff(const Staff& staff)
 {
     std::cout << "\nGaji Staff (diakses melalui getter): Rp " << staff.getGaji() << std::endl;
 }
+
+int main() 
+{
+    // Membuat objek-objek menggunakan pointer
+    Dosen* dosen1 = new Dosen("12345", "Prof. Dr. Budi Santoso", "Guru Besar", 5000000);
+    Mahasiswa* mhs1 = new Mahasiswa("0021", "Siti Aminah", 85.5);
+    Staff* staff1 = new Staff("S001", "Andi Wijaya", 3500000);
+    Universitas* univ1 = new Universitas();
+
+}
