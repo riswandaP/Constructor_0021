@@ -188,4 +188,9 @@ int main()
     beriNilai(*mhs1, 90.0, *dosen1);
     mhs1->tampilkanInfoMahasiswa();
 
+    // Staff mengubah pangkat dosen melalui friend function dan menggunakan pointer,
+    // yang pada akhirnya memanggil method Universitas
+    ubahPangkatDosen(dosen1, "Lektor Kepala", *univ1);
+    dosen1->tampilkanInfoDosen();
+
 }
