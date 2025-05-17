@@ -175,4 +175,10 @@ int main()
     Staff* staff1 = new Staff("S001", "Andi Wijaya", 3500000);
     Universitas* univ1 = new Universitas();
 
+    // Menampilkan informasi awal
+    std::cout << "Informasi Awal:" << std::endl;
+    dosen1->tampilkanInfoDosen();
+    mhs1->tampilkanInfoMahasiswa();
+    staff1->tampilkanInfoStaff();
+
 }
