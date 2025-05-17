@@ -196,4 +196,7 @@ int main()
     // Staff melihat gaji dosen melalui friend function
     lihatGajiDosen(*dosen1);
 
+    // Universitas melihat gaji staff melalui friend function (yang diimplementasikan sebagai method Universitas)
+    univ1->lihatGajiStaff(*staff1);
+
 }
