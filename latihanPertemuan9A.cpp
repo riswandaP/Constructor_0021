@@ -123,3 +123,25 @@ public:
         std::cout << "Gaji: Rp " << gaji << std::endl;
     }
 };
+
+class Universitas 
+{
+public:
+    void ubahPangkatDosen(Dosen* dosen, std::string pangkatBaru) const 
+    {
+        if (dosen != nullptr) 
+        {
+            dosen->pangkat = pangkatBaru;
+            std::cout << "\nUniversitas: Pangkat dosen " << dosen->getNama() << " berhasil diubah menjadi: " << pangkatBaru << std::endl;
+        } 
+        else 
+        {
+            std::cout << "\nUniversitas: Error - Pointer dosen tidak valid." << std::endl;
+        }
+    }
+
+    void lihatGajiStaff(const Staff& staff) const 
+    {
+        std::cout << "\nUniversitas: Gaji Staff " << staff.getNama() << " adalah: Rp " << staff.getGaji() << std::endl;
+    }
+};
